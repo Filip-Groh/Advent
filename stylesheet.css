@@ -1,3 +1,35 @@
 body {
-    background: black;
+    background: gray;
+}
+
+menu {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+menu>li {
+    flex-basis: calc(100% / 25);
+    padding: 2px;
+    background-color: green;
+    margin: 2px;
+    text-align: center;
+    list-style: none;
+    border-radius: 16px;
+}
+
+menu>li>a {
+    font-size: 48px;
+    text-decoration: none;
+    color: blue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
 }

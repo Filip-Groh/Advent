@@ -2,20 +2,55 @@ body {
     background: gray;
 }
 
-menu {
+nav {
     display: flex;
-    max-width: 100%;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav>button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 16px;
+    width: 80%;
 }
 
 menu>li {
-    flex-basis: calc(100% / 25);
     padding: 2px;
     background-color: green;
     margin: 2px;
-    text-align: center;
     list-style: none;
     border-radius: 16px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#vanoce {
+    grid-column: span 4;
+}
+
+#mikulas {
+    grid-column: span 2;
 }
 
 menu>li>a {
@@ -32,4 +67,25 @@ img {
     width: 100%;
     border-radius: 16px;
     display: block;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.squeeze {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+.active {
+    border: 4px solid black;
 }
